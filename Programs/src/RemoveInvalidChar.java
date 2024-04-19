@@ -12,7 +12,7 @@ public class RemoveInvalidChar {
     public static String removeSpecialChar(String s) {
         StringBuilder sb = new StringBuilder();
         for(char c : s.toCharArray()) {
-            if((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9')) {
+            if((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') || (c == ' ')) {
                 sb.append(c);
             }
         }
